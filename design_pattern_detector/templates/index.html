@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Pattern Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Design Pattern Detector</h1>
+        
+        <!-- Code input form -->
+        <form id="code-form">
+            <textarea id="code-input" name="code" placeholder="Paste your code here..." rows="10"></textarea>
+            <button type="submit">Detect Patterns</button>
+        </form>
+
+        <!-- Result display -->
+        <div id="results">
+            <!-- Results will be inserted here -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
